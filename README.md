@@ -3,6 +3,8 @@ Laser cutter and dragknife filter for gcode files.
 
 This little program has two modes: Laser cutter mode and drag knife mode. You'll probably only be interested in one of them, but they share a lot of the same code so they've been rolled up into one program. They are both used with CNC machines that accept gcode. The program loans some code from the grbl project, but is not otherwise associated with it.
 
+![Illustration](readme.png)
+
 # The laser cutter mode 
 
 A problem with CNC machines used as laser cutters is that the machine will accelerate and decelerate at the beginnings and ends of each line segment, thus increasing the laser dose applied to the work piece around corners. This is partially solved in some drivers like grbl by modulating the laser intensity to compensate for the speed variation, so that the total dose remains constant. However, laser cutting is not a linear process, so the cutting parameters that work on the straights might not give ideal results close to corners.
