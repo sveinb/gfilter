@@ -3,6 +3,8 @@ Laser cutter and dragknife filter for gcode files.
 
 This little program has two modes: Laser cutter mode and drag knife mode. You'll probably only be interested in one of them, but they share a lot of the same code so they've been rolled up into one program. They are both used with CNC machines that accept gcode. The program loans some code from the grbl project, but is not otherwise associated with it.
 
+The input to the program is a gcode file and the output from the program is another gcode file.
+
 ![Illustration](readme.png)
 
 # The laser cutter mode 
